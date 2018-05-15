@@ -30,7 +30,7 @@ class Order{
             pizza.calculatePizzaCost();
             this.total += pizza.cost;
         })
-        console.log(`this order cost' ${this.total}`)
+        console.log(`this order cost $${this.total}`)
     }
 }
 
@@ -43,8 +43,8 @@ const pizzaThree = new Pizza(['pepper', 'bacon', 'mushroom']);
 
 pizzaTwo.calculatePizzaCost();
 
-const orderPizza = new Order ([pizzaOne,pizzaTwo, pizzaThree]);
-orderPizza.calculateEntireCost();
+const orderPizza = new Order ([pizzaOne,pizzaTwo, pizzaThree]); 
+orderPizza.calculateEntireCost(); //calling method for variable orderPizza
 
 
 console.log(pizzaOne);
